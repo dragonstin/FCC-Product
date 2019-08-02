@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <link href="css/main.css" type="text/css" rel="stylesheet"/>
-
+    
     <header id="header">
-        <h1 id="title">Wild River</h1>
-        <p>The best company for your Adventure.</p>
-
-        <!--logo-->
-        <img src="" alt="" id="header-img" /> 
         
-        <!--background image-->
-        <img src="" alt="" id="header-background-img"/>
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product_Landing_Page/master/images/logo.png" alt="logo"
+            id="header-img"/>
+            <h1 id="title">Wild River</h1>
+            <p id="title-text">The best company for your Adventure!</p>
+        </div>
+
         <nav id="nav-bar">
             <ul>
-                <li><a href="#home" class="current nav-link">Home</a></li>
+                <li><a href="#home" class="active nav-link">Home</a></li>
                 <li><a href="#adventures" class="nav-link">Adventures</a></li>
                 <li><a href="#packages" class="nav-link">Packages</a></li>
                 <li><a href="#offers" class="nav-link">Offers</a></li>
@@ -22,8 +22,10 @@
         </nav> 
     </header> 
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9txxodYuZGc" frameborder="0"
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9txxodYuZGc" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
     <div class="box">
         <form id="form" action="https://www.freecodecamp.com/email-submit">
