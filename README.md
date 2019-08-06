@@ -1,2 +1,2 @@
-# FCC-Product_Landing_Page
-Project made to FreeCodeCamp.com
+# FCC-Product
+A project made to FreeCodeCamp.com to the Responsive Web Design Course.
