@@ -1,8 +1,9 @@
-    @import url('https://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light|Francois+One&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Lobster|Shadows+Into+Light&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
     * {
         padding: 0;
         margin: 0;
-        font-family: 'Lobster', cursive;
+        font-family: 'Roboto', sans-serif;
     }
 
     html {
@@ -42,9 +43,10 @@
 
     #title-text {
         font-family: 'Shadows Into Light', cursive;
+        text-shadow: 2px 2px 4px #000000;
         font-size: 16px;
         font-weight: bolder;
-        padding-bottom: 3%;
+        padding-bottom: 30px;
     }
 
     #nav-bar {
@@ -59,23 +61,19 @@
 
     #nav-bar ul li {
         float: left;
-        width: 24%;
-        font-size: 90%;
+        width: 33%;
     }
 
     #nav-bar ul li a {
         display: block;
-        font-family: 'Francois One', sans-serif;
+        font-weight: 500;
         text-decoration: none;
         color: rgb(9, 168, 207);
+        padding: 10px 0 10px 0;
     }
 
-    #nav-bar ul li a:hover:not(.active) {
-        background-color: rgba(190, 109, 55, 0.678);
-    }
-
-    .active {
-        background-color: rgba(190, 109, 55, 0.678);
+    a:hover {
+        background-color: rgba(163, 83, 25, 0.637);
     }
 
     .sticky {
@@ -84,31 +82,35 @@
         width: 100%;
     }
 
-    .sticky+.content {
-        padding-top: 60px;
+    /* ---- below nav-bar ---- */
+
+    .content {
+        width: 90%;
+        margin: auto;
+        color: #565a5f;
     }
 
     /* --- video ---*/
 
     .video {
+        margin: auto;
         text-align: center;
-        padding-top: 5%;
     }
 
-    .video iframe {
-        max-width: 560px;
+    #video {
         width: 100%;
+        padding-top: 30px;
+        max-width: 560px;
     }
 
-    section {
-        color: #565a5f;
-    }
+    /* --- section ---*/
 
     section h2 {
-        margin: 9% 0 3% 0;
+        padding-top: 60px;
+        font-family: 'Lobster', cursive;
     }
 
-    .row {
+    .block {
         display: flex;
         flex-direction: column;
     }
@@ -117,8 +119,8 @@
         color: #565a5f;
         background-color: white;
         align-content: center;
-        margin: 5% 5% 0 5%;
-        padding: 4%;
+        margin-top: 20px;
+        padding: 17px;
         max-width: 600px;
     }
 
@@ -134,42 +136,109 @@
     /* --- Form --- */
 
     .box {
-        margin: 5%;
+        margin: auto;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: white;
         text-align: center;
-        background: white;
-        padding: 0;
+        color: #565a5f;
+        margin-bottom: 30px;
     }
 
-    #form {
-        font-size: 90%;
-        padding-top: 5%;
+    .row {
+        display: flex;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        line-height: 1.5;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+
+    .left {
+        text-align: right;
+    }
+
+    .right {
+        text-align: left;
+    }
+
+    .label, .input {
+        width: 90%;
     }
 
     .label {
-        margin-left: 3%;
-        padding-right: 3%;
-        min-width: 50%;
-        max-width: 500px;
+        display: inline-block;
+        padding-right: 10px;
+        text-align: right;
     }
 
     .input {
-        margin-right: 3%;
+        height: 100%;
         background-color: whitesmoke;
-        min-width: 50%;
-        max-width: 500px;
     }
 
+    .textarea {
+        height: 10vw;
+        min-width: 124px;
+        min-height: 70px;
+    }
+
+    /*---------- button submit ----------*/
+
     #submit {
-        margin-top: 15px;
-        max-width: 300px;
+        background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+        width: 15vw;
+        margin: 10px;
+        padding: 5px 10px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 3%;
+        font-size: 100%;
+        font-weight: bold;
+        color: #565a5f;
         min-width: 100px;
     }
 
-    @media (min-width: 698px) {
-        .row {
-            flex-direction: row;
+    #submit:hover {
+        background-position: right center;
+        color: #3A3F45;
+    }
+
+    /* ------- media > 480 ----- */
+
+    @media (min-width: 480px) {
+        #nav-bar ul li a {
+            font-size: 120%;
         }
-        .column {
-            width: 32%;
+        section h2 {
+            font-size: 200%;
+        }
+        #title-text {
+            font-size: 120%;
+        }
+    }
+
+    /* ------- media > 698 ----- */
+
+    @media (min-width: 698px) {
+        .block {
+            flex-direction: row;
+            margin-right: 0;
+        }
+        .between {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .input {
+            margin: 0;
         }
     }
