@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 <link href="css/main.css" type="text/css" rel="stylesheet" />
-<script type="text/javascript" src="js/page.js"></script>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-C:\Users\DagostinFernanda\FCC-Product\page.js
+
 
 <header id="header">
-
-    <div class="header-info">
+    <div id="home" class="header-info">
         <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/logo.png" alt="logo"
             id="header-img" />
         <h1 id="title">Wild River</h1>
@@ -17,119 +14,97 @@ C:\Users\DagostinFernanda\FCC-Product\page.js
 
     <nav id="nav-bar">
         <ul>
-            <li><a href="#home" class="active nav-link">Home</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#adventures" class="nav-link">Adventures</a></li>
-            <li><a href="#packages" class="nav-link">Packages</a></li>
             <li><a href="#contact-us" class="nav-link">Contact us</a></li>
         </ul>
     </nav>
 </header>
 
-<section id="home">
-    <div id="video" class="video">
-        <iframe height="315" src="https://www.youtube.com/embed/9txxodYuZGc" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</section>
+<div class="content">
 
-<section id="adventures">
-    <h2>Adventures</h2>
-    <div class="row">
-        <div class="column">
-            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/rafting.jpg"
-                alt="Rafting" id="rafting" />
-            <h3>Rafting</h3>
-            <ul>
-                <li>Duration 6 hours</li>
-                <li>Dinner include</li>
-                <li>Price $200.00</li>
-            </ul>
+    <section>
+        <div class="video">
+            <iframe id="video" height="315" src="https://www.youtube.com/embed/9txxodYuZGc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
-        <div class="column">
-            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/kayaking.jpg"
-                alt="Kayaking" id="kayaking" />
-            <h3>Kayaking</h3>
-            <ul>
-                <li>Duration 6 hours</li>
-                <li>Dinner include</li>
-                <li>Price $200.00</li>
-            </ul>
-        </div>
-        <div class="column">
-            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/paddleboarding.jpg"
-                alt="Paddleboarding" id="paddleboarding" />
-            <h3>Paddleboarding</h3>
-            <ul>
-                <li>Duration 6 hours</li>
-                <li>Dinner include</li>
-                <li>Price $200.00</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Packages -->
-<section id="packages">
-    <h2>Packages</h2>
-    <div class="row">
-        <div class="column">
-            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/rafting.jpg"
-                alt="Rafting" id="rafting" />
-            <h3>Rafting</h3>
-            <ul>
-                <li>Duration 6 hours</li>
-                <li>Dinner include</li>
-                <li>Price $200.00</li>
-            </ul>
+    <section id="adventures">
+        <h2>Adventures</h2>
+        <div class="block">
+            <div class="column">
+                <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/rafting.jpg"
+                    alt="Rafting" id="rafting" />
+                <h3>Rafting</h3>
+                <ul>
+                    <li>Duration 6 hours</li>
+                    <li>Dinner include</li>
+                    <li>Price $200.00</li>
+                </ul>
+            </div>
+            <div class="column between">
+                <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/kayaking.jpg"
+                    alt="Kayaking" id="kayaking" />
+                <h3>Kayaking</h3>
+                <ul>
+                    <li>Duration 4 hours</li>
+                    <li>Dinner include</li>
+                    <li>Price $140.00</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/paddleboarding.jpg"
+                    alt="Paddleboarding" id="paddleboarding" />
+                <h3>Paddleboarding</h3>
+                <ul>
+                    <li>Duration 2 hours</li>
+                    <li>Dinner include</li>
+                    <li>Price $70.00</li>
+                </ul>
+            </div>
         </div>
-        <div class="column">
-            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/kayaking.jpg"
-                alt="Kayaking" id="kayaking" />
-            <h3>Kayaking</h3>
-            <ul>
-                <li>Duration 4 hours</li>
-                <li>No meal include</li>
-                <li>Price $140.00</li>
-            </ul>
-        </div>
-        <div class="column">
-            <img src="https://raw.githubusercontent.com/fernandadagostin/FCC-Product/master/images/paddleboarding.jpg"
-                alt="Paddleboarding" id="paddleboarding" />
-            <h3>Paddleboarding</h3>
-            <ul>
-                <li>Duration 2 hours</li>
-                <li>No meal include</li>
-                <li>Price 70.00</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Form -->
-<section id="contact-us">
-    <h2>Contact us</h2>
-    <div class="box">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label class="label" for="email">* Email</label>
-            <input class="input" type="email" id="email" placeholder="Your Email here">
-            <br>
-            <input id="submit" type="submit" value="Submit">
-        </form>
-    </div>
-</section>
+    <!-- Form -->
+    <section id="contact-us">
+        <h2>Contact us</h2>
+        <div class="box">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+
+                <div class="row">
+                    <div class="left">
+                        <label id="name-label" for="name" class="label">Name:</label>
+                    </div>
+                    <div class="right">
+                        <input id="name" type="text" class="input" placeholder="Enter your Name">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left">
+                        <label id="email-label" for="email" class="label">Email:</label>
+                    </div>
+                    <div class="right">
+                        <input id="email" name="email" type="email" class="input" placeholder="Enter your Email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left">
+                        <label for="how-may-we-help-you" class="label">How may we help you?</label>
+                    </div>
+                    <div class="right">
+                        <textarea name="how-may-we-help-you" class="input textarea" rows="4" cols="40"
+                            placeholder="Insert your comment here"></textarea>
+                    </div>
+                </div>
+                <input type="submit" id="submit" value="Submit" />
+            </form>
+        </div>
+    </section>
+</div>
 
 </html>
-<!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding 
-section of the landing page.
-
-User Story #12: When I click the #submit element, the email is submitted to a static page (use 
-this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was 
-entered and that it posted successfully.
-
-User Story #13: The navbar should always be at the top of the viewport.
-
-User Story #14: My product landing page should have at least one media query.
-
-User Story #15: My product landing page should utilize CSS flexbox at least once.
-
--->
+<script type="text/javascript" src="js/page.js"></script>
